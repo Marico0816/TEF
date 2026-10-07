@@ -1,0 +1,17 @@
+# Optional extension: online output (off in the paper configuration).  Overlay on tef_t2.yaml or tef_p2.yaml:
+#   python tef_mapping.py config/tef_t2.yaml config/extensions/online.yaml --dataset DIR --frames train:0-600 \
+#       --output outputs/t2_online.ply --set replay_speed=1.0 mesh_delta_dir=outputs/t2_online_deltas
+# Same settings as the recorded online runs (research flags --remesh-every-chunks 1 --incremental-remesh
+# --region-candidates --background-remesh); the final mesh is the paper-path final mesh.
+
+mesher:
+  extract_every_blocks: 1     # one mesh output per temporal block (1 s)
+
+online:
+  incremental_remesh: true    # re-extract only blocks whose nodes moved (1 mm / gate tolerances below)
+  remesh_reuse_tol: 0.0125
+  remesh_gate_tol: 0.05
+  background_remesh: true     # extraction on a worker thread / CUDA stream while the next block is integrated
+  region_candidates: true     # pass-vote candidates only where the block's rays reach (same votes)
+  replay_speed: null          # 1.0 = read scans at their recorded rate and report output latency
+  mesh_delta_dir: null        # directory for one mesh delta file per output

@@ -1,0 +1,191 @@
+{
+  "publication_date": "2026-10-07",
+  "repository": "Marico0816/TEF",
+  "source_snapshot": "TEF_clean",
+  "source_sha256": {
+    ".gitignore": "72e4b022737fcfc8f7b0e124722b489571727397ab80b4beb2684f812208eb18",
+    "README.md": "c4def46f14b5fdf38237cfe691d352b3f77fcf093bb785b436530d39d34d3972",
+    "config/extensions/dynamic4d_kitti0059.json": "6680f0e997b23f227ab67721edff8e5f37aa35b20c8e779b1fd28d3a7288963d",
+    "config/extensions/online.yaml": "0c631e5cea37371c24ffeb298c7266e9300c328971a1bf65fe676ff997f25790",
+    "config/tef_p2.yaml": "26307384cda1870ee38f02b54baa7e809b4a2af40df889a4313754d5955ba7f3",
+    "config/tef_t2.yaml": "766983593b76c75d32f37673a26de3316e60dc19e533349764f1e06a931a6c8e",
+    "dataset/__init__.py": "71bca7fa962d721d27272be2f3817fbc72bd77045b1dcaf11cfc9c5641cd58bc",
+    "dataset/calibration.py": "be3e5bb6cf4a0412b7b87fe478ebee96a83af7a346ffeaf36ca2c93be60649ab",
+    "dataset/converter/export_common_input.py": "d1c8b87c08265b29ceb2581c269d66700eb0217a9c346b1e690cf3e8dc98be7c",
+    "dataset/converter/export_newer_college.py": "c9100db489eb0f8d5b5664db0981328e680e6b261ad7c3eae16b2b29f1285a9c",
+    "dataset/converter/export_oxford_spires.py": "2525a8fec3386de9fcd6fef534d234ff2439b9ddd453731b4f72d58edd2c1bcf",
+    "dataset/data_reader.py": "c7453f895f8b8b5ce77004b2fec8e60313c068903f6ad54780eba875b0e7b525",
+    "dataset/dataset_loader.py": "1b2e84ca07a92666b3333100eaa9dab7b6e54edcb5e3eb6718215e45636db195",
+    "dataset/trajectory.py": "9cee9c38065be604fd070df895a25ea5d4be6e12c518b4cb8641b479cf8cd8cd",
+    "eval/evaluate_mesh_fair.py": "ca3330b00c74553dd596073367b5e03313846211ee77a3b09dbafe531d620d15",
+    "eval/evaluate_mesh_gt.py": "c199da405fece34074f86046dd8a11471ce13a742b7c7c09823213bfdba6672d",
+    "eval/evaluate_mesh_rays.py": "85b49dd0fb623f82f128666cb14ac486f7088c0499959634e6bc728e71d17970",
+    "eval/paired_gt_bootstrap.py": "a9978b6e9edd9b69d673a4bc7642c2b89011c1727289c02654523216e53622d1",
+    "extensions/__init__.py": "a7fd769ea5875871f332088b5f3c6f78ef12173276080a6b4475023e59858e4a",
+    "extensions/dynamic4d/INPUTS.md": "1c2f54f82a1b9f4829ad27fa2b4d9b92f87e1cfcae1047f1d0ce773406093efd",
+    "extensions/dynamic4d/__init__.py": "3a39892c93e7082840210d74860ae44fe67924a86321750d315f2ed97dbc974b",
+    "extensions/dynamic4d/bag.py": "fcb33b2ee3cf059fa8849a106a38a1cae5c36eed7747fce727620f5d529654c8",
+    "extensions/dynamic4d/cli.py": "51f4e9b3d5697509f6902afe9c224c6ea8846a06f4560a2973b0c0e7d6a95ce0",
+    "extensions/dynamic4d/guard.py": "c9203ec4cf7ff6aeb1c9ae88527c8f7ec7e48d99dfa91db9fa768860b4217f04",
+    "extensions/dynamic4d/object_field.py": "0a3de66a0697c85e236d612fed7e0221c44f048155f46c7d39849cb1d88b7448",
+    "extensions/dynamic4d/objects.py": "9871a51dde1d9bbe20ffb1e6b843c92cedf48c9b3478b27dd5c82661b623efd9",
+    "extensions/dynamic4d/pipeline.py": "2605924e42d4b41de4e57d0c416a72797846de61d15a51ea730e85e98b5da2bc",
+    "extensions/dynamic4d/view.rviz": "84842b93e5b7e4f41c0f97a4642e6ad307dddd241e635f12b07fe210ba369544",
+    "extensions/dynamic4d/visual.py": "59d78c217172d8798ffb86d5351b6208aa7940e05c8946ce95f0fa57c72922a8",
+    "extensions/online/__init__.py": "6a0f81c21d06e97cab3a1f76db17af4af14b421bf300c775a37db8b2ec3a9558",
+    "extensions/online/deltas.py": "b328af116efeeee9ced418dc6e4d8ff96f7812607f5fd11803cd7911dfe2379f",
+    "extensions/online/incremental.py": "36f9812d82c194b85331a3ce6d55c967f3a6c4a93977eda4b00737593e80ee38",
+    "extensions/online/replay.py": "998c8f1f7e0cec60181a66f05aee26df37378765e79d75b6ba5e14b76cd4fcff",
+    "model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/local_support.py": "047298fc76cb859ff35af3c8c7a65b58ccb791031190b9ffacb185d938cf989a",
+    "model/sparse_field.py": "37b12916e8f031ab3d1633705eeed4fcd51eef5496041e18ae5811bc99679c72",
+    "reconstruct4d.py": "3dec064412fd27f13beee09e00d7eb7b0e077ae8e1de2aea881811c449cb086a",
+    "requirements.txt": "ae09f6843ae9f60f18212c9b3a817ac3721452440314328e1b7e91fbed5ea443",
+    "scripts/demo_tiny_scene.py": "0e142a78c3d119b7a8cc0306aa97927b67767d18caa47e83c45135d28e46cead",
+    "tef_mapping.py": "970e37ee2cd95cb95712c8a04d5cc85945a8ac804613f0757a9e6fb731f71b35",
+    "tests/compare_dynamic4d.py": "cb9e1a169f9381e1e89ef06ae0ed1f27edc2fa4e2ec9fd8a2f01e5b02fd3bf2a",
+    "tests/compare_research.py": "34a8abb87e12fbfafc0e9eb9d3964021b75d1e5109f6cae30c2211ae0fd78d2f",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/block_fusion.py": "b03f46e36a3f822bf701820776f83dc95c5f089922c145821625448ba7e3c167",
+    "utils/config.py": "4bbf8ab36fbae126c2a5388ab3020138268d4fb9ad95acdfdd5a7ab721519f3b",
+    "utils/conflict_target.py": "5869e83002d872a0aa40988ecc9e16b5ccb87359456382ce5a4e46b60824bbf2",
+    "utils/mesher.py": "9450e098cc010ae6d1639ccfa5d17b401d681ce0aef106388d5c7496675c86ee",
+    "utils/preprocess.py": "aea7212631eb16df4ee68d067feb33e8fcbd9f5048f502a91bab17463d1dcbdb",
+    "utils/regularizer.py": "61ebc714595e724cf888623abc3b0443096885f75414615f3015986133f73e18",
+    "utils/sampler.py": "9b468bb898fb42fc4e5ea2d464cac08d639cd43cfef2e664019643aa75a7cf6b",
+    "utils/tools.py": "0228acd6168d145dcb30b9fc869d8d827f236582245eccfba650871b12900522"
+  },
+  "published_sha256_excluding_this_manifest": {
+    ".gitignore": "1c98053e1d8a201d32b4ca79064cf83778941d09f1c934c6a96174d91c59b834",
+    "LICENSE.md": "6cee253b7d0fa20f4fd2055a905fb653a874a30b3786e21443c8b4f9c953b444",
+    "README.md": "187dac598ee3e62eacc2ba306dcefc4ff79770b18170927b4f458d95957add14",
+    "config/extensions/dynamic4d_kitti0059.json": "19e6124e4403be09abdab822222f563926271ca9dec63582285787047453b519",
+    "config/extensions/online.yaml": "0c631e5cea37371c24ffeb298c7266e9300c328971a1bf65fe676ff997f25790",
+    "config/tef_p2.yaml": "26307384cda1870ee38f02b54baa7e809b4a2af40df889a4313754d5955ba7f3",
+    "config/tef_t2.yaml": "766983593b76c75d32f37673a26de3316e60dc19e533349764f1e06a931a6c8e",
+    "dataset/__init__.py": "71bca7fa962d721d27272be2f3817fbc72bd77045b1dcaf11cfc9c5641cd58bc",
+    "dataset/calibration.py": "be3e5bb6cf4a0412b7b87fe478ebee96a83af7a346ffeaf36ca2c93be60649ab",
+    "dataset/converter/export_common_input.py": "d1c8b87c08265b29ceb2581c269d66700eb0217a9c346b1e690cf3e8dc98be7c",
+    "dataset/converter/export_newer_college.py": "c9100db489eb0f8d5b5664db0981328e680e6b261ad7c3eae16b2b29f1285a9c",
+    "dataset/converter/export_oxford_spires.py": "2525a8fec3386de9fcd6fef534d234ff2439b9ddd453731b4f72d58edd2c1bcf",
+    "dataset/data_reader.py": "c7453f895f8b8b5ce77004b2fec8e60313c068903f6ad54780eba875b0e7b525",
+    "dataset/dataset_loader.py": "1b2e84ca07a92666b3333100eaa9dab7b6e54edcb5e3eb6718215e45636db195",
+    "dataset/trajectory.py": "9cee9c38065be604fd070df895a25ea5d4be6e12c518b4cb8641b479cf8cd8cd",
+    "docs/publication.md": "2c459ec318314a34d84c1355ae1637a858390283d7279ed756edd73caae589f1",
+    "docs/validation.md": "7fc7383a9e7e3f1d45fb2fdbf00cef4e445e5458554398fead0c69cdfe5fd068",
+    "eval/evaluate_mesh_fair.py": "ca3330b00c74553dd596073367b5e03313846211ee77a3b09dbafe531d620d15",
+    "eval/evaluate_mesh_gt.py": "c199da405fece34074f86046dd8a11471ce13a742b7c7c09823213bfdba6672d",
+    "eval/evaluate_mesh_rays.py": "85b49dd0fb623f82f128666cb14ac486f7088c0499959634e6bc728e71d17970",
+    "eval/paired_gt_bootstrap.py": "a9978b6e9edd9b69d673a4bc7642c2b89011c1727289c02654523216e53622d1",
+    "extensions/__init__.py": "a7fd769ea5875871f332088b5f3c6f78ef12173276080a6b4475023e59858e4a",
+    "extensions/dynamic4d/INPUTS.md": "9069bd98d8e24984c734b54f0ae7b10525f88ebce889d1fa2aad265e8c282c8e",
+    "extensions/dynamic4d/__init__.py": "3a39892c93e7082840210d74860ae44fe67924a86321750d315f2ed97dbc974b",
+    "extensions/dynamic4d/bag.py": "fcb33b2ee3cf059fa8849a106a38a1cae5c36eed7747fce727620f5d529654c8",
+    "extensions/dynamic4d/cli.py": "51f4e9b3d5697509f6902afe9c224c6ea8846a06f4560a2973b0c0e7d6a95ce0",
+    "extensions/dynamic4d/guard.py": "c9203ec4cf7ff6aeb1c9ae88527c8f7ec7e48d99dfa91db9fa768860b4217f04",
+    "extensions/dynamic4d/object_field.py": "0a3de66a0697c85e236d612fed7e0221c44f048155f46c7d39849cb1d88b7448",
+    "extensions/dynamic4d/objects.py": "9871a51dde1d9bbe20ffb1e6b843c92cedf48c9b3478b27dd5c82661b623efd9",
+    "extensions/dynamic4d/pipeline.py": "2605924e42d4b41de4e57d0c416a72797846de61d15a51ea730e85e98b5da2bc",
+    "extensions/dynamic4d/view.rviz": "84842b93e5b7e4f41c0f97a4642e6ad307dddd241e635f12b07fe210ba369544",
+    "extensions/dynamic4d/visual.py": "59d78c217172d8798ffb86d5351b6208aa7940e05c8946ce95f0fa57c72922a8",
+    "extensions/online/__init__.py": "6a0f81c21d06e97cab3a1f76db17af4af14b421bf300c775a37db8b2ec3a9558",
+    "extensions/online/deltas.py": "b328af116efeeee9ced418dc6e4d8ff96f7812607f5fd11803cd7911dfe2379f",
+    "extensions/online/incremental.py": "36f9812d82c194b85331a3ce6d55c967f3a6c4a93977eda4b00737593e80ee38",
+    "extensions/online/replay.py": "998c8f1f7e0cec60181a66f05aee26df37378765e79d75b6ba5e14b76cd4fcff",
+    "model/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "model/local_support.py": "047298fc76cb859ff35af3c8c7a65b58ccb791031190b9ffacb185d938cf989a",
+    "model/sparse_field.py": "37b12916e8f031ab3d1633705eeed4fcd51eef5496041e18ae5811bc99679c72",
+    "reconstruct4d.py": "3dec064412fd27f13beee09e00d7eb7b0e077ae8e1de2aea881811c449cb086a",
+    "requirements.txt": "ae09f6843ae9f60f18212c9b3a817ac3721452440314328e1b7e91fbed5ea443",
+    "scripts/demo_tiny_scene.py": "0e142a78c3d119b7a8cc0306aa97927b67767d18caa47e83c45135d28e46cead",
+    "tef_mapping.py": "970e37ee2cd95cb95712c8a04d5cc85945a8ac804613f0757a9e6fb731f71b35",
+    "tests/compare_dynamic4d.py": "cb9e1a169f9381e1e89ef06ae0ed1f27edc2fa4e2ec9fd8a2f01e5b02fd3bf2a",
+    "tests/compare_research.py": "34a8abb87e12fbfafc0e9eb9d3964021b75d1e5109f6cae30c2211ae0fd78d2f",
+    "utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "utils/block_fusion.py": "b03f46e36a3f822bf701820776f83dc95c5f089922c145821625448ba7e3c167",
+    "utils/config.py": "4bbf8ab36fbae126c2a5388ab3020138268d4fb9ad95acdfdd5a7ab721519f3b",
+    "utils/conflict_target.py": "5869e83002d872a0aa40988ecc9e16b5ccb87359456382ce5a4e46b60824bbf2",
+    "utils/mesher.py": "9450e098cc010ae6d1639ccfa5d17b401d681ce0aef106388d5c7496675c86ee",
+    "utils/preprocess.py": "aea7212631eb16df4ee68d067feb33e8fcbd9f5048f502a91bab17463d1dcbdb",
+    "utils/regularizer.py": "61ebc714595e724cf888623abc3b0443096885f75414615f3015986133f73e18",
+    "utils/sampler.py": "9b468bb898fb42fc4e5ea2d464cac08d639cd43cfef2e664019643aa75a7cf6b",
+    "utils/tools.py": "0228acd6168d145dcb30b9fc869d8d827f236582245eccfba650871b12900522"
+  },
+  "source_report_sha256": {
+    "RESULTS_tef_clean_equivalence_2026-10-06.md": "cfbe67a341f5ab4b5c935ea32e5211cd7b695e0ce30f56feea80e7b4a596271b",
+    "RESULTS_tef_clean_extensions_2026-10-06.md": "59b62d6d1a3e3f917a7ad347c3acf30dfc55b278e83d999b652e096a2f792b9f",
+    "results/tef_clean_extensions_2026-10-06/_code_sha256.txt": "bd34c1847e30d11d12364333287c27bc31c54dff969c8ededcea09deee4ea594"
+  },
+  "publication_checks": {
+    "python_files": 42,
+    "python_identical_to_source": true,
+    "configs_loaded": 2,
+    "dynamic_config_schema": "passed",
+    "entrypoints": [
+      {
+        "entrypoint": "tef_mapping.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "reconstruct4d.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "scripts/demo_tiny_scene.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "dataset/converter/export_newer_college.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "dataset/converter/export_oxford_spires.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "dataset/converter/export_common_input.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "eval/evaluate_mesh_gt.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "eval/evaluate_mesh_fair.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "eval/evaluate_mesh_rays.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "eval/paired_gt_bootstrap.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "tests/compare_research.py",
+        "exit_code": 0
+      },
+      {
+        "entrypoint": "tests/compare_dynamic4d.py",
+        "exit_code": 0
+      }
+    ],
+    "problems": []
+  },
+  "synthetic_demo": {
+    "device": "cpu",
+    "method": "t2",
+    "passed": true,
+    "vertices": 289468,
+    "triangles": 514057,
+    "floor_median_error_cm": 1.24,
+    "wall_median_error_cm": 0.09
+  },
+  "changes_from_source": [
+    ".gitignore",
+    "README.md",
+    "config/extensions/dynamic4d_kitti0059.json",
+    "extensions/dynamic4d/INPUTS.md"
+  ]
+}

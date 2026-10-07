@@ -1,0 +1,12 @@
+# Generated data and local environments
+outputs/
+output/
+data/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+.DS_Store

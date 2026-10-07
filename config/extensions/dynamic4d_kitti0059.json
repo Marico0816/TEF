@@ -1,0 +1,9 @@
+{
+  "scenes_json": "data/kitti0059_t51/scenes.json",
+  "initial_model": "data/kitti0059_t51/model.npz",
+  "partitions": "data/kitti0059_t51/partitions",
+  "image_cache": "data/kitti0059_t51/images",
+  "scene_manifest": "data/kitti0059_t51/scene_manifest.json",
+  "mesh_every": 5,
+  "background_radius_m": 10
+}

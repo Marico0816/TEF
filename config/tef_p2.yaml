@@ -1,0 +1,54 @@
+# P2: the shared-frontend pure-fusion control -- same steps I-III and VI as T2, sample-weighted block fusion, no pass
+# evidence, no conflict target, no solve (research PURE_FUSION_P2 + TEF_FORMAL_RUN).
+
+data:
+  min_range_m: 0.5
+  max_range_m: 50.0
+  device: cuda
+
+preprocess:
+  deskew: true
+  subsample_first: true
+  max_rays_per_frame: 12000
+
+sampler:
+  voxel_m: 0.04
+  truncation_factor: 2.0
+  samples_per_ray: 5
+  normal_projected_sdf: true
+  local_support: true
+  local_support_voxels_m: [0.25, 0.5, 1.0]
+  local_support_min_points: 30
+  local_support_max_planarity: 0.15
+  normal_truncation_sigma: 3.0
+  per_return_truncation: true
+  footprint_extent_sigma: 1.0
+  max_footprint_samples_per_ray: 25
+  data_support_limit: true
+
+fusion:
+  block_seconds: 1.0
+  block_weight: sum
+  count_unit: block
+
+conflict:
+  evidence: false         # steps IV and V are skipped: the fused field is the map
+  free_target: truncation
+  pass_weight: 0.0
+
+solver:
+  lam: 0.0
+  solve_tol: 1.0e-6
+  block_voxels: 64
+  solve_margin_blocks: 1
+
+mesher:
+  min_node_weight: 0.20
+  min_observed_corners: 3
+  min_cube_probability: 0.1
+  max_edge_factor: 3.0
+  cube_batch: 500000
+  remesh_eps_m: 1.0e-4
+  extract_every_blocks: 0
+  tiled_final: true
+  evict_distance_m: 90.0

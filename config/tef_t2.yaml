@@ -1,0 +1,58 @@
+# TEF (T2): the paper configuration -- bounded block weight, hit / pass evidence, mirror conflict target, regularised solve.
+# Frozen 2026-09-13 (research registry FROZEN-TEF-FULL-V1 / TEF_CORE_T2 + TEF_FORMAL_RUN).  Do not tune on test sequences.
+
+data:
+  min_range_m: 0.5
+  max_range_m: 50.0
+  device: cuda
+
+preprocess:               # I.
+  deskew: true
+  subsample_first: true   # the deterministic 12 000-return subset shared by every method
+  max_rays_per_frame: 12000
+
+sampler:                  # II.
+  voxel_m: 0.04
+  truncation_factor: 2.0  # f = 0.08 m
+  samples_per_ray: 5
+  normal_projected_sdf: true
+  local_support: true     # false: default frame for every return (ablation)
+  local_support_voxels_m: [0.25, 0.5, 1.0]
+  local_support_min_points: 30
+  local_support_max_planarity: 0.15
+  normal_truncation_sigma: 3.0
+  per_return_truncation: true      # false: constant truncation (ablation)
+  footprint_extent_sigma: 1.0
+  max_footprint_samples_per_ray: 25  # 1: no lateral samples (ablation)
+  data_support_limit: true
+
+fusion:                   # III.
+  block_seconds: 1.0
+  block_weight: max       # sum: sample-weighted fusion (ablation / P2)
+  count_unit: block       # frame | ray (counting-unit control)
+
+conflict:                 # IV.
+  evidence: true
+  free_target: mirror     # truncation | constant (target controls)
+  constant_target: 1.0
+  pass_weight: 1.0        # beta
+  persistence_blocks: 3   # H
+
+solver:                   # V.
+  lam: 0.3
+  iterations: 30
+  damping: 0.8
+  solve_tol: 1.0e-4
+  block_voxels: 64
+  solve_margin_blocks: 1
+
+mesher:                   # VI.
+  min_node_weight: 0.10
+  min_observed_corners: 3
+  min_cube_probability: 0.1
+  max_edge_factor: 3.0
+  cube_batch: 500000
+  remesh_eps_m: 1.0e-4
+  extract_every_blocks: 0 # 0: once, at the end
+  tiled_final: true
+  evict_distance_m: 90.0
